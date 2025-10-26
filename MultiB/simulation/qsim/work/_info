@@ -1,0 +1,126 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\fede_\OneDrive\Documentos\ProyectosQuartus\Tecnicas\V18\MultiB\simulation\qsim
+Ehard_block
+Z1 w1761352077
+Z2 DPx4 ieee 16 vital_primitives 0 22 9W@YP9_VCb?_GCJ8e:;YQ0
+Z3 DPx10 cycloneive 20 cycloneive_atom_pack 0 22 Pha:T]_MmzTJCYhSbeLPQ1
+Z4 DPx4 ieee 12 vital_timing 0 22 7h8zz2S4HVg:a;2TBMI[j1
+Z5 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z6 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z7 DPx10 cycloneive 21 cycloneive_components 0 22 mVG;b;]=zAIVfAk:WJ`El1
+Z8 dC:\Users\fede_\OneDrive\Documentos\ProyectosQuartus\Tecnicas\V18\MultiB\simulation\qsim
+Z9 8MultiB.vho
+Z10 FMultiB.vho
+l0
+L34
+ViB[@XD6>4f^a@az=ll8LZ1
+Z11 OV;C;10.1d;51
+32
+Z12 !s108 1761352078.319000
+Z13 !s90 -work|work|MultiB.vho|
+Z14 !s107 MultiB.vho|
+Z15 o-work work -O0
+Z16 tExplicit 1
+!s100 RC4@N3XiSMdQMTf3Z;=id0
+!i10b 1
+Astructure
+R2
+R3
+R4
+R5
+R6
+R7
+DEx4 work 10 hard_block 0 22 iB[@XD6>4f^a@az=ll8LZ1
+l64
+L50
+VhZ4711OZWWPD=Sj=TIZU22
+!s100 ^Wl>I7QP@V:CC=<0N^P>?2
+R11
+32
+R12
+R13
+R14
+R15
+R16
+!i10b 1
+Emultib
+R1
+R2
+R3
+R4
+R5
+R6
+R7
+R8
+R9
+R10
+l0
+L77
+VL<R>1a9Zh`WZKmSiCRP0c3
+R11
+32
+R12
+R13
+R14
+R15
+R16
+!s100 4]UBfozEc@V3RJ@ACZmok1
+!i10b 1
+Astructure
+R2
+R3
+R4
+R5
+R6
+R7
+DEx4 work 6 multib 0 22 L<R>1a9Zh`WZKmSiCRP0c3
+l194
+L117
+VI9m:?mUZI03_n;Kz47S5g3
+!s100 54P0z9]aN@5gmn<lY`cie2
+R11
+32
+R12
+R13
+R14
+R15
+R16
+!i10b 1
+Emultib_vhd_vec_tst
+Z17 w1761352076
+R5
+R6
+R8
+Z18 8Waveform.vwf.vht
+Z19 FWaveform.vwf.vht
+l0
+L31
+Vm<EOMYP0=cI`9EmkTG7;^1
+!s100 QN:XV@:c_cMTX4Di@l]mP1
+R11
+32
+!i10b 1
+Z20 !s108 1761352078.442000
+Z21 !s90 -work|work|Waveform.vwf.vht|
+Z22 !s107 Waveform.vwf.vht|
+R15
+R16
+Amultib_arch
+R5
+R6
+Z23 DEx4 work 18 multib_vhd_vec_tst 0 22 m<EOMYP0=cI`9EmkTG7;^1
+l72
+L33
+VH[EE5OTBo0;MXP>Z>]3D33
+!s100 ANe87DS;^Ne>HdPY3lb7C1
+R11
+32
+!i10b 1
+R20
+R21
+R22
+R15
+R16
