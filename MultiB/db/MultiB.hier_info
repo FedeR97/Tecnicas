@@ -1,4 +1,23 @@
-|MultiB
+|Multiplicador
+P0 <= MultiB:inst.P0
+A0 => MultiB:inst.A0
+B0 => MultiB:inst.B0
+A1 => MultiB:inst.A1
+A2 => MultiB:inst.A2
+A3 => MultiB:inst.A3
+B1 => MultiB:inst.B1
+B2 => MultiB:inst.B2
+B3 => MultiB:inst.B3
+P1 <= MultiB:inst.P1
+P2 <= MultiB:inst.P2
+P3 <= MultiB:inst.P3
+P4 <= MultiB:inst.P4
+P5 <= MultiB:inst.P5
+P6 <= MultiB:inst.P6
+P7 <= MultiB:inst.P7
+
+
+|Multiplicador|MultiB:inst
 A0 => SYNTHESIZED_WIRE_13.IN0
 A0 => P0.IN0
 A0 => SYNTHESIZED_WIRE_24.IN0
@@ -41,7 +60,7 @@ P6 <= sumador_completo:b2v_inst13.S
 P7 <= sumador_completo:b2v_inst13.CO
 
 
-|MultiB|sumador_completo:b2v_inst10
+|Multiplicador|MultiB:inst|sumador_completo:b2v_inst10
 A => S.IN1
 A => CO.IN0
 A => CO.IN0
@@ -55,7 +74,7 @@ CO <= CO.DB_MAX_OUTPUT_PORT_TYPE
 S <= S.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|MultiB|sumador_completo:b2v_inst11
+|Multiplicador|MultiB:inst|sumador_completo:b2v_inst11
 A => S.IN1
 A => CO.IN0
 A => CO.IN0
@@ -69,7 +88,7 @@ CO <= CO.DB_MAX_OUTPUT_PORT_TYPE
 S <= S.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|MultiB|sumador_completo:b2v_inst12
+|Multiplicador|MultiB:inst|sumador_completo:b2v_inst12
 A => S.IN1
 A => CO.IN0
 A => CO.IN0
@@ -83,7 +102,7 @@ CO <= CO.DB_MAX_OUTPUT_PORT_TYPE
 S <= S.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|MultiB|sumador_completo:b2v_inst13
+|Multiplicador|MultiB:inst|sumador_completo:b2v_inst13
 A => S.IN1
 A => CO.IN0
 A => CO.IN0
@@ -97,7 +116,7 @@ CO <= CO.DB_MAX_OUTPUT_PORT_TYPE
 S <= S.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|MultiB|sumador_completo:b2v_inst2
+|Multiplicador|MultiB:inst|sumador_completo:b2v_inst2
 A => S.IN1
 A => CO.IN0
 A => CO.IN0
@@ -111,7 +130,7 @@ CO <= CO.DB_MAX_OUTPUT_PORT_TYPE
 S <= S.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|MultiB|sumador_completo:b2v_inst3
+|Multiplicador|MultiB:inst|sumador_completo:b2v_inst3
 A => S.IN1
 A => CO.IN0
 A => CO.IN0
@@ -125,7 +144,7 @@ CO <= CO.DB_MAX_OUTPUT_PORT_TYPE
 S <= S.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|MultiB|sumador_completo:b2v_inst4
+|Multiplicador|MultiB:inst|sumador_completo:b2v_inst4
 A => S.IN1
 A => CO.IN0
 A => CO.IN0
@@ -139,7 +158,7 @@ CO <= CO.DB_MAX_OUTPUT_PORT_TYPE
 S <= S.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|MultiB|sumador_completo:b2v_inst5
+|Multiplicador|MultiB:inst|sumador_completo:b2v_inst5
 A => S.IN1
 A => CO.IN0
 A => CO.IN0
@@ -153,7 +172,7 @@ CO <= CO.DB_MAX_OUTPUT_PORT_TYPE
 S <= S.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|MultiB|sumador_completo:b2v_inst6
+|Multiplicador|MultiB:inst|sumador_completo:b2v_inst6
 A => S.IN1
 A => CO.IN0
 A => CO.IN0
@@ -167,7 +186,7 @@ CO <= CO.DB_MAX_OUTPUT_PORT_TYPE
 S <= S.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|MultiB|sumador_completo:b2v_inst7
+|Multiplicador|MultiB:inst|sumador_completo:b2v_inst7
 A => S.IN1
 A => CO.IN0
 A => CO.IN0
@@ -181,7 +200,7 @@ CO <= CO.DB_MAX_OUTPUT_PORT_TYPE
 S <= S.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|MultiB|sumador_completo:b2v_inst8
+|Multiplicador|MultiB:inst|sumador_completo:b2v_inst8
 A => S.IN1
 A => CO.IN0
 A => CO.IN0
@@ -195,7 +214,7 @@ CO <= CO.DB_MAX_OUTPUT_PORT_TYPE
 S <= S.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|MultiB|sumador_completo:b2v_inst9
+|Multiplicador|MultiB:inst|sumador_completo:b2v_inst9
 A => S.IN1
 A => CO.IN0
 A => CO.IN0

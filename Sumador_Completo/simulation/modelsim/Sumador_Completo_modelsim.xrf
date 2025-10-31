@@ -2,6 +2,7 @@ vendor_name = ModelSim
 source_file = 1, C:/Users/fede_/OneDrive/Documentos/ProyectosQuartus/Tecnicas/V18/Sumador_Completo/Sumador_Completo.vhd
 source_file = 1, C:/Users/fede_/OneDrive/Documentos/ProyectosQuartus/Tecnicas/V18/Sumador_Completo/Waveform.vwf
 source_file = 1, C:/Users/fede_/OneDrive/Documentos/ProyectosQuartus/Tecnicas/V18/Sumador_Completo/Block1.bdf
+source_file = 1, C:/Users/fede_/OneDrive/Documentos/ProyectosQuartus/Tecnicas/V18/Sumador_Completo/Prueba_Sumador_Completo.vhd
 source_file = 1, c:/intelfpga_lite/18.1/quartus/libraries/vhdl/ieee/prmtvs_b.vhd
 source_file = 1, c:/intelfpga_lite/18.1/quartus/libraries/vhdl/ieee/prmtvs_p.vhd
 source_file = 1, c:/intelfpga_lite/18.1/quartus/libraries/vhdl/ieee/timing_b.vhd

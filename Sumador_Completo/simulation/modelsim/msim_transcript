@@ -1,0 +1,54 @@
+# Reading C:/altera/13.0sp1/modelsim_ase/tcl/vsim/pref.tcl 
+# do Sumador_Completo_run_msim_rtl_vhdl.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vcom -93 -work work {C:/Users/fede_/OneDrive/Documentos/ProyectosQuartus/Tecnicas/V18/Sumador_Completo/Sumador_Completo.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity sumador_completo
+# -- Compiling architecture sumar of sumador_completo
+# 
+# vcom -93 -work work {C:/Users/fede_/OneDrive/Documentos/ProyectosQuartus/Tecnicas/V18/Sumador_Completo/Prueba_Sumador_Completo.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Prueba_Sumador_Completo
+# -- Compiling architecture behavior of Prueba_Sumador_Completo
+# ** Warning: [4] C:/Users/fede_/OneDrive/Documentos/ProyectosQuartus/Tecnicas/V18/Sumador_Completo/Prueba_Sumador_Completo.vhd(33): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] C:/Users/fede_/OneDrive/Documentos/ProyectosQuartus/Tecnicas/V18/Sumador_Completo/Prueba_Sumador_Completo.vhd(34): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] C:/Users/fede_/OneDrive/Documentos/ProyectosQuartus/Tecnicas/V18/Sumador_Completo/Prueba_Sumador_Completo.vhd(35): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] C:/Users/fede_/OneDrive/Documentos/ProyectosQuartus/Tecnicas/V18/Sumador_Completo/Prueba_Sumador_Completo.vhd(36): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] C:/Users/fede_/OneDrive/Documentos/ProyectosQuartus/Tecnicas/V18/Sumador_Completo/Prueba_Sumador_Completo.vhd(37): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] C:/Users/fede_/OneDrive/Documentos/ProyectosQuartus/Tecnicas/V18/Sumador_Completo/Prueba_Sumador_Completo.vhd(38): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] C:/Users/fede_/OneDrive/Documentos/ProyectosQuartus/Tecnicas/V18/Sumador_Completo/Prueba_Sumador_Completo.vhd(39): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] C:/Users/fede_/OneDrive/Documentos/ProyectosQuartus/Tecnicas/V18/Sumador_Completo/Prueba_Sumador_Completo.vhd(40): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# 
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneive -L rtl_work -L work -voptargs="+acc"  Prueba_Sumador_Completo
+# vsim -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneive -L rtl_work -L work -voptargs=\"+acc\" -t 1ps Prueba_Sumador_Completo 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.prueba_sumador_completo(behavior)
+# Loading ieee.numeric_std(body)
+# Loading work.sumador_completo(sumar)
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Break key hit 
+# Simulation stop requested.

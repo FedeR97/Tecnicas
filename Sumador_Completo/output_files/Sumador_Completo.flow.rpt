@@ -1,5 +1,5 @@
 Flow report for Sumador_Completo
-Mon Oct 20 16:57:53 2025
+Fri Oct 31 02:06:59 2025
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -40,7 +40,7 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Mon Oct 20 16:57:53 2025       ;
+; Flow Status                        ; Successful - Fri Oct 31 02:06:59 2025       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; Sumador_Completo                            ;
 ; Top-level Entity Name              ; Block1                                      ;
@@ -64,30 +64,39 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 10/20/2025 16:56:49 ;
+; Start date & time ; 10/31/2025 02:06:19 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; Sumador_Completo    ;
 +-------------------+---------------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------+
-; Flow Non-Default Global Settings                                                                                               ;
-+-------------------------------------+----------------------------------------+------------------+-------------+----------------+
-; Assignment Name                     ; Value                                  ; Default Value    ; Entity Name ; Section Id     ;
-+-------------------------------------+----------------------------------------+------------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 256134807449955.176099020815128        ; --               ; --          ; --             ;
-; EDA_OUTPUT_DATA_FORMAT              ; Verilog Hdl                            ; --               ; --          ; eda_simulation ;
-; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (Verilog)              ; <None>           ; --          ; --             ;
-; EDA_TIME_SCALE                      ; 1 ps                                   ; --               ; --          ; eda_simulation ;
-; MAX_CORE_JUNCTION_TEMP              ; 85                                     ; --               ; --          ; --             ;
-; MIN_CORE_JUNCTION_TEMP              ; 0                                      ; --               ; --          ; --             ;
-; NOMINAL_CORE_SUPPLY_VOLTAGE         ; 1.2V                                   ; --               ; --          ; --             ;
-; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --               ; Block1      ; Top            ;
-; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family) ; --               ; Block1      ; Top            ;
-; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family) ; --               ; Block1      ; Top            ;
-; PROJECT_OUTPUT_DIRECTORY            ; output_files                           ; --               ; --          ; --             ;
-; TOP_LEVEL_ENTITY                    ; Block1                                 ; Sumador_Completo ; --          ; --             ;
-+-------------------------------------+----------------------------------------+------------------+-------------+----------------+
++------------------------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                                         ;
++--------------------------------------+----------------------------------------+------------------+-------------+-------------------------+
+; Assignment Name                      ; Value                                  ; Default Value    ; Entity Name ; Section Id              ;
++--------------------------------------+----------------------------------------+------------------+-------------+-------------------------+
+; COMPILER_SIGNATURE_ID                ; 256134807449955.176188717912124        ; --               ; --          ; --                      ;
+; EDA_DESIGN_INSTANCE_NAME             ; uut                                    ; --               ; --          ; Prueba_Sumador_Completo ;
+; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; Prueba_Sumador_Completo                ; --               ; --          ; eda_simulation          ;
+; EDA_OUTPUT_DATA_FORMAT               ; Verilog Hdl                            ; --               ; --          ; eda_simulation          ;
+; EDA_SIMULATION_TOOL                  ; ModelSim-Altera (Verilog)              ; <None>           ; --          ; --                      ;
+; EDA_TEST_BENCH_ENABLE_STATUS         ; TEST_BENCH_MODE                        ; --               ; --          ; eda_simulation          ;
+; EDA_TEST_BENCH_FILE                  ; Prueba_Sumador_Completo.vhd            ; --               ; --          ; Prueba_Sumador_Completo ;
+; EDA_TEST_BENCH_MODULE_NAME           ; Prueba_Sumador_Completo                ; --               ; --          ; Prueba_Sumador_Completo ;
+; EDA_TEST_BENCH_NAME                  ; Prueba_Sumador_Completo                ; --               ; --          ; eda_simulation          ;
+; EDA_TEST_BENCH_RUN_SIM_FOR           ; 40 ns                                  ; --               ; --          ; Prueba_Sumador_Completo ;
+; EDA_TIME_SCALE                       ; 1 ps                                   ; --               ; --          ; eda_simulation          ;
+; MAX_CORE_JUNCTION_TEMP               ; 85                                     ; --               ; --          ; --                      ;
+; MIN_CORE_JUNCTION_TEMP               ; 0                                      ; --               ; --          ; --                      ;
+; NOMINAL_CORE_SUPPLY_VOLTAGE          ; 1.2V                                   ; --               ; --          ; --                      ;
+; PARTITION_COLOR                      ; -- (Not supported for targeted family) ; --               ; Block1      ; Top                     ;
+; PARTITION_FITTER_PRESERVATION_LEVEL  ; -- (Not supported for targeted family) ; --               ; Block1      ; Top                     ;
+; PARTITION_NETLIST_TYPE               ; -- (Not supported for targeted family) ; --               ; Block1      ; Top                     ;
+; POWER_BOARD_THERMAL_MODEL            ; None (CONSERVATIVE)                    ; --               ; --          ; --                      ;
+; POWER_PRESET_COOLING_SOLUTION        ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW  ; --               ; --          ; --                      ;
+; PROJECT_OUTPUT_DIRECTORY             ; output_files                           ; --               ; --          ; --                      ;
+; TOP_LEVEL_ENTITY                     ; Block1                                 ; Sumador_Completo ; --          ; --                      ;
++--------------------------------------+----------------------------------------+------------------+-------------+-------------------------+
 
 
 +--------------------------------------------------------------------------------------------------------------------------+
@@ -95,12 +104,12 @@ refer to the applicable agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:33     ; 1.0                     ; 4801 MB             ; 00:01:13                           ;
-; Fitter               ; 00:00:13     ; 1.0                     ; 5512 MB             ; 00:00:16                           ;
-; Assembler            ; 00:00:04     ; 1.0                     ; 4675 MB             ; 00:00:04                           ;
-; Timing Analyzer      ; 00:00:07     ; 1.0                     ; 4779 MB             ; 00:00:06                           ;
-; EDA Netlist Writer   ; 00:00:03     ; 1.0                     ; 4638 MB             ; 00:00:03                           ;
-; Total                ; 00:01:00     ; --                      ; --                  ; 00:01:42                           ;
+; Analysis & Synthesis ; 00:00:18     ; 1.0                     ; 4791 MB             ; 00:00:41                           ;
+; Fitter               ; 00:00:10     ; 1.0                     ; 5505 MB             ; 00:00:10                           ;
+; Assembler            ; 00:00:01     ; 1.0                     ; 4675 MB             ; 00:00:02                           ;
+; Timing Analyzer      ; 00:00:03     ; 1.0                     ; 4780 MB             ; 00:00:03                           ;
+; EDA Netlist Writer   ; 00:00:02     ; 1.0                     ; 4638 MB             ; 00:00:01                           ;
+; Total                ; 00:00:34     ; --                      ; --                  ; 00:00:57                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

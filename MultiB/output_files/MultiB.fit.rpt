@@ -1,5 +1,5 @@
 Fitter report for MultiB
-Fri Oct 24 21:17:42 2025
+Sun Oct 26 00:52:32 2025
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -62,10 +62,10 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Fitter Summary                                                                   ;
 +------------------------------------+---------------------------------------------+
-; Fitter Status                      ; Successful - Fri Oct 24 21:17:42 2025       ;
+; Fitter Status                      ; Successful - Sun Oct 26 00:52:32 2025       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; MultiB                                      ;
-; Top-level Entity Name              ; MultiB                                      ;
+; Top-level Entity Name              ; Multiplicador                               ;
 ; Family                             ; Cyclone IV E                                ;
 ; Device                             ; EP4CE22F17C7                                ;
 ; Timing Models                      ; Final                                       ;
@@ -149,12 +149,12 @@ refer to the applicable agreement for further details.
 ; Number detected on machine ; 8           ;
 ; Maximum allowed            ; 4           ;
 ;                            ;             ;
-; Average used               ; 1.01        ;
+; Average used               ; 1.00        ;
 ; Maximum used               ; 4           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-4         ;   0.2%      ;
+;     Processors 2-4         ;   0.1%      ;
 +----------------------------+-------------+
 
 
@@ -702,25 +702,26 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 +----------+-------------------------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Fitter Resource Utilization by Entity                                                                                                                                                                                                                                                                    ;
-+----------------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+-------------------------------------+------------------+--------------+
-; Compilation Hierarchy Node       ; Logic Cells ; Dedicated Logic Registers ; I/O Registers ; Memory Bits ; M9Ks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Full Hierarchy Name                 ; Entity Name      ; Library Name ;
-+----------------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+-------------------------------------+------------------+--------------+
-; |MultiB                          ; 27 (3)      ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 16   ; 0            ; 27 (3)       ; 0 (0)             ; 0 (0)            ; |MultiB                             ; MultiB           ; work         ;
-;    |sumador_completo:b2v_inst10| ; 2 (2)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; |MultiB|sumador_completo:b2v_inst10 ; sumador_completo ; work         ;
-;    |sumador_completo:b2v_inst11| ; 2 (2)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; |MultiB|sumador_completo:b2v_inst11 ; sumador_completo ; work         ;
-;    |sumador_completo:b2v_inst12| ; 2 (2)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; |MultiB|sumador_completo:b2v_inst12 ; sumador_completo ; work         ;
-;    |sumador_completo:b2v_inst13| ; 2 (2)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; |MultiB|sumador_completo:b2v_inst13 ; sumador_completo ; work         ;
-;    |sumador_completo:b2v_inst2|  ; 2 (2)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; |MultiB|sumador_completo:b2v_inst2  ; sumador_completo ; work         ;
-;    |sumador_completo:b2v_inst3|  ; 2 (2)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; |MultiB|sumador_completo:b2v_inst3  ; sumador_completo ; work         ;
-;    |sumador_completo:b2v_inst4|  ; 2 (2)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; |MultiB|sumador_completo:b2v_inst4  ; sumador_completo ; work         ;
-;    |sumador_completo:b2v_inst5|  ; 2 (2)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; |MultiB|sumador_completo:b2v_inst5  ; sumador_completo ; work         ;
-;    |sumador_completo:b2v_inst6|  ; 2 (2)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; |MultiB|sumador_completo:b2v_inst6  ; sumador_completo ; work         ;
-;    |sumador_completo:b2v_inst7|  ; 2 (2)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; |MultiB|sumador_completo:b2v_inst7  ; sumador_completo ; work         ;
-;    |sumador_completo:b2v_inst8|  ; 2 (2)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; |MultiB|sumador_completo:b2v_inst8  ; sumador_completo ; work         ;
-;    |sumador_completo:b2v_inst9|  ; 2 (2)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; |MultiB|sumador_completo:b2v_inst9  ; sumador_completo ; work         ;
-+----------------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+-------------------------------------+------------------+--------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Fitter Resource Utilization by Entity                                                                                                                                                                                                                                                                                          ;
++-------------------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+--------------------------------------------------------+------------------+--------------+
+; Compilation Hierarchy Node          ; Logic Cells ; Dedicated Logic Registers ; I/O Registers ; Memory Bits ; M9Ks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Full Hierarchy Name                                    ; Entity Name      ; Library Name ;
++-------------------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+--------------------------------------------------------+------------------+--------------+
+; |Multiplicador                      ; 27 (0)      ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 16   ; 0            ; 27 (0)       ; 0 (0)             ; 0 (0)            ; |Multiplicador                                         ; Multiplicador    ; work         ;
+;    |MultiB:inst|                    ; 27 (3)      ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 27 (3)       ; 0 (0)             ; 0 (0)            ; |Multiplicador|MultiB:inst                             ; MultiB           ; work         ;
+;       |sumador_completo:b2v_inst10| ; 2 (2)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; |Multiplicador|MultiB:inst|sumador_completo:b2v_inst10 ; sumador_completo ; work         ;
+;       |sumador_completo:b2v_inst11| ; 2 (2)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; |Multiplicador|MultiB:inst|sumador_completo:b2v_inst11 ; sumador_completo ; work         ;
+;       |sumador_completo:b2v_inst12| ; 2 (2)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; |Multiplicador|MultiB:inst|sumador_completo:b2v_inst12 ; sumador_completo ; work         ;
+;       |sumador_completo:b2v_inst13| ; 2 (2)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; |Multiplicador|MultiB:inst|sumador_completo:b2v_inst13 ; sumador_completo ; work         ;
+;       |sumador_completo:b2v_inst2|  ; 2 (2)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; |Multiplicador|MultiB:inst|sumador_completo:b2v_inst2  ; sumador_completo ; work         ;
+;       |sumador_completo:b2v_inst3|  ; 2 (2)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; |Multiplicador|MultiB:inst|sumador_completo:b2v_inst3  ; sumador_completo ; work         ;
+;       |sumador_completo:b2v_inst4|  ; 2 (2)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; |Multiplicador|MultiB:inst|sumador_completo:b2v_inst4  ; sumador_completo ; work         ;
+;       |sumador_completo:b2v_inst5|  ; 2 (2)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; |Multiplicador|MultiB:inst|sumador_completo:b2v_inst5  ; sumador_completo ; work         ;
+;       |sumador_completo:b2v_inst6|  ; 2 (2)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; |Multiplicador|MultiB:inst|sumador_completo:b2v_inst6  ; sumador_completo ; work         ;
+;       |sumador_completo:b2v_inst7|  ; 2 (2)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; |Multiplicador|MultiB:inst|sumador_completo:b2v_inst7  ; sumador_completo ; work         ;
+;       |sumador_completo:b2v_inst8|  ; 2 (2)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; |Multiplicador|MultiB:inst|sumador_completo:b2v_inst8  ; sumador_completo ; work         ;
+;       |sumador_completo:b2v_inst9|  ; 2 (2)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; |Multiplicador|MultiB:inst|sumador_completo:b2v_inst9  ; sumador_completo ; work         ;
++-------------------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+--------------------------------------------------------+------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -748,66 +749,66 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +------+----------+---------------+---------------+-----------------------+-----+------+
 
 
-+-----------------------------------------------------------------------+
-; Pad To Core Delay Chain Fanout                                        ;
-+-----------------------------------------+-------------------+---------+
-; Source Pin / Fanout                     ; Pad To Core Index ; Setting ;
-+-----------------------------------------+-------------------+---------+
-; A0                                      ;                   ;         ;
-; B0                                      ;                   ;         ;
-; A1                                      ;                   ;         ;
-;      - sumador_completo:b2v_inst2|S     ; 0                 ; 6       ;
-;      - sumador_completo:b2v_inst2|CO~0  ; 0                 ; 6       ;
-;      - sumador_completo:b2v_inst3|S     ; 0                 ; 6       ;
-;      - sumador_completo:b2v_inst3|CO~0  ; 0                 ; 6       ;
-;      - sumador_completo:b2v_inst7|S     ; 0                 ; 6       ;
-;      - sumador_completo:b2v_inst7|CO~0  ; 0                 ; 6       ;
-;      - sumador_completo:b2v_inst11|S    ; 0                 ; 6       ;
-;      - sumador_completo:b2v_inst11|CO~0 ; 0                 ; 6       ;
-; B1                                      ;                   ;         ;
-;      - sumador_completo:b2v_inst2|S     ; 1                 ; 6       ;
-;      - sumador_completo:b2v_inst2|CO~0  ; 1                 ; 6       ;
-;      - sumador_completo:b2v_inst3|S     ; 1                 ; 6       ;
-;      - sumador_completo:b2v_inst3|CO~0  ; 1                 ; 6       ;
-;      - sumador_completo:b2v_inst4|S     ; 1                 ; 6       ;
-;      - sumador_completo:b2v_inst4|CO~0  ; 1                 ; 6       ;
-;      - sumador_completo:b2v_inst5|S     ; 1                 ; 6       ;
-;      - sumador_completo:b2v_inst5|CO~0  ; 1                 ; 6       ;
-; A2                                      ;                   ;         ;
-;      - SYNTHESIZED_WIRE_16              ; 0                 ; 6       ;
-;      - sumador_completo:b2v_inst4|S     ; 0                 ; 6       ;
-;      - sumador_completo:b2v_inst4|CO~0  ; 0                 ; 6       ;
-;      - sumador_completo:b2v_inst8|S     ; 0                 ; 6       ;
-;      - sumador_completo:b2v_inst8|CO~0  ; 0                 ; 6       ;
-;      - sumador_completo:b2v_inst12|S    ; 0                 ; 6       ;
-;      - sumador_completo:b2v_inst12|CO~0 ; 0                 ; 6       ;
-; B2                                      ;                   ;         ;
-;      - sumador_completo:b2v_inst6|S     ; 1                 ; 6       ;
-;      - sumador_completo:b2v_inst6|CO~0  ; 1                 ; 6       ;
-;      - sumador_completo:b2v_inst7|S     ; 1                 ; 6       ;
-;      - sumador_completo:b2v_inst7|CO~0  ; 1                 ; 6       ;
-;      - sumador_completo:b2v_inst8|S     ; 1                 ; 6       ;
-;      - sumador_completo:b2v_inst8|CO~0  ; 1                 ; 6       ;
-;      - sumador_completo:b2v_inst9|S     ; 1                 ; 6       ;
-;      - sumador_completo:b2v_inst9|CO~0  ; 1                 ; 6       ;
-; A3                                      ;                   ;         ;
-;      - SYNTHESIZED_WIRE_19              ; 0                 ; 6       ;
-;      - sumador_completo:b2v_inst5|S     ; 0                 ; 6       ;
-;      - sumador_completo:b2v_inst5|CO~0  ; 0                 ; 6       ;
-;      - sumador_completo:b2v_inst9|S     ; 0                 ; 6       ;
-;      - sumador_completo:b2v_inst9|CO~0  ; 0                 ; 6       ;
-;      - sumador_completo:b2v_inst13|S~0  ; 0                 ; 6       ;
-;      - sumador_completo:b2v_inst13|CO~0 ; 0                 ; 6       ;
-; B3                                      ;                   ;         ;
-;      - sumador_completo:b2v_inst10|S    ; 0                 ; 6       ;
-;      - sumador_completo:b2v_inst10|CO~0 ; 0                 ; 6       ;
-;      - sumador_completo:b2v_inst11|S    ; 0                 ; 6       ;
-;      - sumador_completo:b2v_inst11|CO~0 ; 0                 ; 6       ;
-;      - sumador_completo:b2v_inst12|S    ; 0                 ; 6       ;
-;      - sumador_completo:b2v_inst12|CO~0 ; 0                 ; 6       ;
-;      - sumador_completo:b2v_inst13|S~0  ; 0                 ; 6       ;
-;      - sumador_completo:b2v_inst13|CO~0 ; 0                 ; 6       ;
-+-----------------------------------------+-------------------+---------+
++-----------------------------------------------------------------------------------+
+; Pad To Core Delay Chain Fanout                                                    ;
++-----------------------------------------------------+-------------------+---------+
+; Source Pin / Fanout                                 ; Pad To Core Index ; Setting ;
++-----------------------------------------------------+-------------------+---------+
+; A0                                                  ;                   ;         ;
+; B0                                                  ;                   ;         ;
+; A1                                                  ;                   ;         ;
+;      - MultiB:inst|sumador_completo:b2v_inst2|S     ; 0                 ; 6       ;
+;      - MultiB:inst|sumador_completo:b2v_inst2|CO~0  ; 0                 ; 6       ;
+;      - MultiB:inst|sumador_completo:b2v_inst3|S     ; 0                 ; 6       ;
+;      - MultiB:inst|sumador_completo:b2v_inst3|CO~0  ; 0                 ; 6       ;
+;      - MultiB:inst|sumador_completo:b2v_inst7|S     ; 0                 ; 6       ;
+;      - MultiB:inst|sumador_completo:b2v_inst7|CO~0  ; 0                 ; 6       ;
+;      - MultiB:inst|sumador_completo:b2v_inst11|S    ; 0                 ; 6       ;
+;      - MultiB:inst|sumador_completo:b2v_inst11|CO~0 ; 0                 ; 6       ;
+; B1                                                  ;                   ;         ;
+;      - MultiB:inst|sumador_completo:b2v_inst2|S     ; 1                 ; 6       ;
+;      - MultiB:inst|sumador_completo:b2v_inst2|CO~0  ; 1                 ; 6       ;
+;      - MultiB:inst|sumador_completo:b2v_inst3|S     ; 1                 ; 6       ;
+;      - MultiB:inst|sumador_completo:b2v_inst3|CO~0  ; 1                 ; 6       ;
+;      - MultiB:inst|sumador_completo:b2v_inst4|S     ; 1                 ; 6       ;
+;      - MultiB:inst|sumador_completo:b2v_inst4|CO~0  ; 1                 ; 6       ;
+;      - MultiB:inst|sumador_completo:b2v_inst5|S     ; 1                 ; 6       ;
+;      - MultiB:inst|sumador_completo:b2v_inst5|CO~0  ; 1                 ; 6       ;
+; A2                                                  ;                   ;         ;
+;      - MultiB:inst|SYNTHESIZED_WIRE_16              ; 0                 ; 6       ;
+;      - MultiB:inst|sumador_completo:b2v_inst4|S     ; 0                 ; 6       ;
+;      - MultiB:inst|sumador_completo:b2v_inst4|CO~0  ; 0                 ; 6       ;
+;      - MultiB:inst|sumador_completo:b2v_inst8|S     ; 0                 ; 6       ;
+;      - MultiB:inst|sumador_completo:b2v_inst8|CO~0  ; 0                 ; 6       ;
+;      - MultiB:inst|sumador_completo:b2v_inst12|S    ; 0                 ; 6       ;
+;      - MultiB:inst|sumador_completo:b2v_inst12|CO~0 ; 0                 ; 6       ;
+; B2                                                  ;                   ;         ;
+;      - MultiB:inst|sumador_completo:b2v_inst6|S     ; 1                 ; 6       ;
+;      - MultiB:inst|sumador_completo:b2v_inst6|CO~0  ; 1                 ; 6       ;
+;      - MultiB:inst|sumador_completo:b2v_inst7|S     ; 1                 ; 6       ;
+;      - MultiB:inst|sumador_completo:b2v_inst7|CO~0  ; 1                 ; 6       ;
+;      - MultiB:inst|sumador_completo:b2v_inst8|S     ; 1                 ; 6       ;
+;      - MultiB:inst|sumador_completo:b2v_inst8|CO~0  ; 1                 ; 6       ;
+;      - MultiB:inst|sumador_completo:b2v_inst9|S     ; 1                 ; 6       ;
+;      - MultiB:inst|sumador_completo:b2v_inst9|CO~0  ; 1                 ; 6       ;
+; A3                                                  ;                   ;         ;
+;      - MultiB:inst|SYNTHESIZED_WIRE_19              ; 0                 ; 6       ;
+;      - MultiB:inst|sumador_completo:b2v_inst5|S     ; 0                 ; 6       ;
+;      - MultiB:inst|sumador_completo:b2v_inst5|CO~0  ; 0                 ; 6       ;
+;      - MultiB:inst|sumador_completo:b2v_inst9|S     ; 0                 ; 6       ;
+;      - MultiB:inst|sumador_completo:b2v_inst9|CO~0  ; 0                 ; 6       ;
+;      - MultiB:inst|sumador_completo:b2v_inst13|S~0  ; 0                 ; 6       ;
+;      - MultiB:inst|sumador_completo:b2v_inst13|CO~0 ; 0                 ; 6       ;
+; B3                                                  ;                   ;         ;
+;      - MultiB:inst|sumador_completo:b2v_inst10|S    ; 0                 ; 6       ;
+;      - MultiB:inst|sumador_completo:b2v_inst10|CO~0 ; 0                 ; 6       ;
+;      - MultiB:inst|sumador_completo:b2v_inst11|S    ; 0                 ; 6       ;
+;      - MultiB:inst|sumador_completo:b2v_inst11|CO~0 ; 0                 ; 6       ;
+;      - MultiB:inst|sumador_completo:b2v_inst12|S    ; 0                 ; 6       ;
+;      - MultiB:inst|sumador_completo:b2v_inst12|CO~0 ; 0                 ; 6       ;
+;      - MultiB:inst|sumador_completo:b2v_inst13|S~0  ; 0                 ; 6       ;
+;      - MultiB:inst|sumador_completo:b2v_inst13|CO~0 ; 0                 ; 6       ;
++-----------------------------------------------------+-------------------+---------+
 
 
 +-----------------------------------------------+
@@ -1090,7 +1091,7 @@ Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were
     Info (170201): Optimizations that may affect the design's routability were skipped
     Info (170200): Optimizations that may affect the design's timing were skipped
 Info (170194): Fitter routing operations ending: elapsed time is 00:00:00
-Info (11888): Total time spent on timing analysis during the Fitter is 0.06 seconds.
+Info (11888): Total time spent on timing analysis during the Fitter is 0.04 seconds.
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
@@ -1098,9 +1099,9 @@ Info (334004): Delay annotation completed successfully
 Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:01
 Info (144001): Generated suppressed messages file C:/Users/fede_/OneDrive/Documentos/ProyectosQuartus/Tecnicas/V18/MultiB/output_files/MultiB.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 6 warnings
-    Info: Peak virtual memory: 5513 megabytes
-    Info: Processing ended: Fri Oct 24 21:17:42 2025
-    Info: Elapsed time: 00:00:07
+    Info: Peak virtual memory: 5503 megabytes
+    Info: Processing ended: Sun Oct 26 00:52:32 2025
+    Info: Elapsed time: 00:00:05
     Info: Total CPU time (on all processors): 00:00:08
 
 

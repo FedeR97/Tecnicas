@@ -1,7 +1,7 @@
-Analysis & Synthesis Status : Successful - Fri Oct 24 21:17:34 2025
+Analysis & Synthesis Status : Successful - Sun Oct 26 00:52:26 2025
 Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 Revision Name : MultiB
-Top-level Entity Name : MultiB
+Top-level Entity Name : Multiplicador
 Family : Cyclone IV E
 Total logic elements : 27
     Total combinational functions : 27

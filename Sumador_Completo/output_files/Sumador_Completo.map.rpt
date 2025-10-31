@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Sumador_Completo
-Mon Oct 20 16:57:20 2025
+Fri Oct 31 02:06:37 2025
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -42,7 +42,7 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Mon Oct 20 16:57:20 2025       ;
+; Analysis & Synthesis Status        ; Successful - Fri Oct 31 02:06:37 2025       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; Sumador_Completo                            ;
 ; Top-level Entity Name              ; Block1                                      ;
@@ -249,7 +249,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:01     ;
+; Top            ; 00:00:00     ;
 +----------------+--------------+
 
 
@@ -259,7 +259,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Mon Oct 20 16:56:47 2025
+    Info: Processing started: Fri Oct 31 02:06:19 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Sumador_Completo -c Sumador_Completo
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -268,6 +268,9 @@ Info (12021): Found 2 design units, including 1 entities, in source file sumador
     Info (12023): Found entity 1: sumador_completo File: C:/Users/fede_/OneDrive/Documentos/ProyectosQuartus/Tecnicas/V18/Sumador_Completo/Sumador_Completo.vhd Line: 5
 Info (12021): Found 1 design units, including 1 entities, in source file block1.bdf
     Info (12023): Found entity 1: Block1
+Info (12021): Found 2 design units, including 1 entities, in source file prueba_sumador_completo.vhd
+    Info (12022): Found design unit 1: Prueba_Sumador_Completo-behavior File: C:/Users/fede_/OneDrive/Documentos/ProyectosQuartus/Tecnicas/V18/Sumador_Completo/Prueba_Sumador_Completo.vhd Line: 7
+    Info (12023): Found entity 1: Prueba_Sumador_Completo File: C:/Users/fede_/OneDrive/Documentos/ProyectosQuartus/Tecnicas/V18/Sumador_Completo/Prueba_Sumador_Completo.vhd Line: 4
 Info (12127): Elaborating entity "Block1" for the top level hierarchy
 Info (12128): Elaborating entity "sumador_completo" for hierarchy "sumador_completo:inst"
 Info (286030): Timing-Driven Synthesis is running
@@ -278,9 +281,9 @@ Info (21057): Implemented 7 device resources after synthesis - the final resourc
     Info (21059): Implemented 2 output pins
     Info (21061): Implemented 2 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4801 megabytes
-    Info: Processing ended: Mon Oct 20 16:57:20 2025
-    Info: Elapsed time: 00:00:33
-    Info: Total CPU time (on all processors): 00:01:13
+    Info: Peak virtual memory: 4791 megabytes
+    Info: Processing ended: Fri Oct 31 02:06:38 2025
+    Info: Elapsed time: 00:00:19
+    Info: Total CPU time (on all processors): 00:00:41
 
 

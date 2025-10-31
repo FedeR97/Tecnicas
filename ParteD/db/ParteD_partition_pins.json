@@ -1,0 +1,57 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "producto_unsigned[0]",
+					"strict" : false
+				},
+				{
+					"name" : "producto_unsigned[1]",
+					"strict" : false
+				},
+				{
+					"name" : "producto_unsigned[2]",
+					"strict" : false
+				},
+				{
+					"name" : "producto_unsigned[3]",
+					"strict" : false
+				},
+				{
+					"name" : "producto_signed[0]",
+					"strict" : false
+				},
+				{
+					"name" : "producto_signed[1]",
+					"strict" : false
+				},
+				{
+					"name" : "producto_signed[2]",
+					"strict" : false
+				},
+				{
+					"name" : "producto_signed[3]",
+					"strict" : false
+				},
+				{
+					"name" : "a[0]",
+					"strict" : false
+				},
+				{
+					"name" : "b[0]",
+					"strict" : false
+				},
+				{
+					"name" : "a[1]",
+					"strict" : false
+				},
+				{
+					"name" : "b[1]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,19 @@
+|ParteD
+a[0] => Mult0.IN1
+a[0] => Mult1.IN1
+a[1] => Mult0.IN0
+a[1] => Mult1.IN0
+b[0] => Mult0.IN3
+b[0] => Mult1.IN3
+b[1] => Mult0.IN2
+b[1] => Mult1.IN2
+producto_unsigned[0] <= Mult0.DB_MAX_OUTPUT_PORT_TYPE
+producto_unsigned[1] <= Mult0.DB_MAX_OUTPUT_PORT_TYPE
+producto_unsigned[2] <= Mult0.DB_MAX_OUTPUT_PORT_TYPE
+producto_unsigned[3] <= Mult0.DB_MAX_OUTPUT_PORT_TYPE
+producto_signed[0] <= Mult1.DB_MAX_OUTPUT_PORT_TYPE
+producto_signed[1] <= Mult1.DB_MAX_OUTPUT_PORT_TYPE
+producto_signed[2] <= Mult1.DB_MAX_OUTPUT_PORT_TYPE
+producto_signed[3] <= Mult1.DB_MAX_OUTPUT_PORT_TYPE
+
+

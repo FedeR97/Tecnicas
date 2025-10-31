@@ -1,0 +1,110 @@
+|MultiBC
+P0 <= inst11.DB_MAX_OUTPUT_PORT_TYPE
+Clk => inst11.CLK
+Clk => inst16.CLK
+Clk => inst17.CLK
+Clk => inst10.CLK
+Clk => inst19.CLK
+Clk => inst18.CLK
+Clk => inst12.CLK
+Clk => inst13.CLK
+IB0 => inst16.DATAIN
+IA0 => inst17.DATAIN
+P1 <= inst10.DB_MAX_OUTPUT_PORT_TYPE
+S1 <= inst15.DB_MAX_OUTPUT_PORT_TYPE
+IA1 => inst19.DATAIN
+S4 <= inst33.DB_MAX_OUTPUT_PORT_TYPE
+IB1 => inst18.DATAIN
+P2 <= inst12.DB_MAX_OUTPUT_PORT_TYPE
+S2 <= inst30.DB_MAX_OUTPUT_PORT_TYPE
+S5 <= inst34.DB_MAX_OUTPUT_PORT_TYPE
+P3 <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+S3 <= inst31.DB_MAX_OUTPUT_PORT_TYPE
+S6 <= inst35.DB_MAX_OUTPUT_PORT_TYPE
+P4 <= sumador_completo:inst5.CO
+
+
+|MultiBC|sumador_completo:inst3
+A => S.IN1
+A => CO.IN0
+A => CO.IN0
+B => S.IN0
+B => CO.IN1
+B => CO.IN0
+CI => S.IN1
+CI => CO.IN1
+CI => CO.IN1
+CO <= CO.DB_MAX_OUTPUT_PORT_TYPE
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MultiBC|sumador_completo:inst6
+A => S.IN1
+A => CO.IN0
+A => CO.IN0
+B => S.IN0
+B => CO.IN1
+B => CO.IN0
+CI => S.IN1
+CI => CO.IN1
+CI => CO.IN1
+CO <= CO.DB_MAX_OUTPUT_PORT_TYPE
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MultiBC|sumador_completo:inst4
+A => S.IN1
+A => CO.IN0
+A => CO.IN0
+B => S.IN0
+B => CO.IN1
+B => CO.IN0
+CI => S.IN1
+CI => CO.IN1
+CI => CO.IN1
+CO <= CO.DB_MAX_OUTPUT_PORT_TYPE
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MultiBC|sumador_completo:inst8
+A => S.IN1
+A => CO.IN0
+A => CO.IN0
+B => S.IN0
+B => CO.IN1
+B => CO.IN0
+CI => S.IN1
+CI => CO.IN1
+CI => CO.IN1
+CO <= CO.DB_MAX_OUTPUT_PORT_TYPE
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MultiBC|sumador_completo:inst5
+A => S.IN1
+A => CO.IN0
+A => CO.IN0
+B => S.IN0
+B => CO.IN1
+B => CO.IN0
+CI => S.IN1
+CI => CO.IN1
+CI => CO.IN1
+CO <= CO.DB_MAX_OUTPUT_PORT_TYPE
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MultiBC|sumador_completo:inst21
+A => S.IN1
+A => CO.IN0
+A => CO.IN0
+B => S.IN0
+B => CO.IN1
+B => CO.IN0
+CI => S.IN1
+CI => CO.IN1
+CI => CO.IN1
+CO <= CO.DB_MAX_OUTPUT_PORT_TYPE
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+
+
