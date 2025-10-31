@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Fri Oct 31 04:04:38 2025
+Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+Revision Name : ParteE2
+Top-level Entity Name : ParteE2
+Family : Cyclone IV E
+Total logic elements : 11
+    Total combinational functions : 10
+    Dedicated logic registers : 7
+Total registers : 7
+Total pins : 7
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

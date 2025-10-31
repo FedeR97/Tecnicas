@@ -1,0 +1,97 @@
+-- Quartus Prime VHDL Template
+-- Four-State Moore State Machine
+
+-- A Moore machine's outputs are dependent only on the current state.
+-- The output is written only when the state changes.  (State
+-- transitions are synchronous.)
+
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity ParteE2 is
+
+	port(
+		clk		 : in	std_logic;
+		X_in	 	 : in	std_logic;
+		reset	 	 : in	std_logic;
+		d_out	 : out std_logic_vector(3 downto 0)
+	);
+
+end entity;
+
+architecture rtl of ParteE2 is
+
+	-- Build an enumerated type for the state machine
+	type state_type is (s0, s1, s2, s3, s4, s5, s6);
+
+	-- Register to hold the current state
+	signal state   : state_type;
+
+begin
+	-- Logic to advance to the neX_int state
+	process (clk, reset)
+	begin
+		if reset = '1' then
+			state <= s0;
+		elsif (rising_edge(clk)) then
+			case state is
+				when s0=>
+					if X_in = '1' then
+						state <= s1;
+					else
+						state <= s3;
+					end if;
+				when s1=>
+					if X_in = '0' or X_in = '1' then
+						state <= s2;
+					end if;
+				when s2=>
+					if X_in = '1' then
+						state <= s5;
+					else
+						state <= s6;
+					end if;
+				when s3 =>
+					if X_in = '0' or X_in = '1' then
+						state <= s4;
+					end if;
+				when s4=>
+						if X_in = '0' or X_in = '1' then
+						state <= s2;
+					end if;
+				when s5=>
+					if X_in = '1' then
+						state <= s0;
+					else
+						state <= s0;
+					end if;
+				when s6=>
+						if X_in = '0' or X_in = '1' then
+						state <= s2;
+					end if;
+			end case;
+		end if;
+	end process;
+
+	-- Output depends solely on the current state
+	process (state)
+	begin
+		case state is
+			when s0 =>
+				d_out <= "0000";
+			when s1 =>
+				d_out <= "0110";
+			when s2 =>
+				d_out <= "1111";
+			when s3 =>
+				d_out <= "1000";
+			when s4 =>
+				d_out <= "1100";
+			when s5 =>
+				d_out <= "1001";
+			when s6 =>
+				d_out <= "1110";
+		end case;
+	end process;
+end rtl;
+
