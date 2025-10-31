@@ -4,15 +4,23 @@
 			"name" : "Top",
 			"pins" : [
 				{
-					"name" : "OUT",
+					"name" : "Fin_dir",
 					"strict" : false
 				},
 				{
-					"name" : "IN1",
+					"name" : "SOY",
 					"strict" : false
 				},
 				{
-					"name" : "IN2",
+					"name" : "SDA",
+					"strict" : false
+				},
+				{
+					"name" : "Hab_dir",
+					"strict" : false
+				},
+				{
+					"name" : "SCL",
 					"strict" : false
 				}
 			]

@@ -1,0 +1,130 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\fede_\OneDrive\Documentos\ProyectosQuartus\Tecnicas\V18\ParteF\simulation\qsim
+Ecompdir
+Z1 w1761921786
+Z2 DPx10 cycloneive 20 cycloneive_atom_pack 0 22 Pha:T]_MmzTJCYhSbeLPQ1
+Z3 DPx10 cycloneive 21 cycloneive_components 0 22 mVG;b;]=zAIVfAk:WJ`El1
+Z4 DPx4 ieee 16 vital_primitives 0 22 9W@YP9_VCb?_GCJ8e:;YQ0
+Z5 DPx6 altera 11 dffeas_pack 0 22 Giz7C_dB_=WZS^1=3P8073
+Z6 DPx4 ieee 12 vital_timing 0 22 7h8zz2S4HVg:a;2TBMI[j1
+Z7 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z8 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z9 DPx6 altera 28 altera_primitives_components 0 22 W]_:GkoiISnEn83KNb:3:2
+Z10 dC:\Users\fede_\OneDrive\Documentos\ProyectosQuartus\Tecnicas\V18\ParteF\simulation\qsim
+Z11 8ParteF.vho
+Z12 FParteF.vho
+l0
+L79
+V<gS[e5VJRT_5h;ToZG_5e3
+Z13 OV;C;10.1d;51
+32
+Z14 !s108 1761921787.104000
+Z15 !s90 -work|work|ParteF.vho|
+Z16 !s107 ParteF.vho|
+Z17 o-work work -O0
+Z18 tExplicit 1
+!s100 Ted1G[GL`6701PM0S_L<g3
+!i10b 1
+Astructure
+R2
+R3
+R4
+R5
+R6
+R7
+R8
+R9
+DEx4 work 7 compdir 0 22 <gS[e5VJRT_5h;ToZG_5e3
+l141
+L97
+VIfZ:JD22K6XiXZl[OM7;23
+R13
+32
+R14
+R15
+R16
+R17
+R18
+!s100 42bmz2W0^HkU50n;?W?kR0
+!i10b 1
+Ecompdir_vhd_vec_tst
+Z19 w1761921785
+R7
+R8
+R10
+Z20 8Waveform.vwf.vht
+Z21 FWaveform.vwf.vht
+l0
+L31
+VVgCKG2cPcK;4lmoF`XA_Z2
+!s100 9QbgUEeodRGXgH;Z^MQVW2
+R13
+32
+!i10b 1
+Z22 !s108 1761921787.241000
+Z23 !s90 -work|work|Waveform.vwf.vht|
+Z24 !s107 Waveform.vwf.vht|
+R17
+R18
+Acompdir_arch
+R7
+R8
+Z25 DEx4 work 19 compdir_vhd_vec_tst 0 22 VgCKG2cPcK;4lmoF`XA_Z2
+l50
+L33
+Z26 Vh;Q5NkaG>j[abMjLDFU`D0
+Z27 !s100 1]:<lVZG06giX`0PoKWmH0
+R13
+32
+!i10b 1
+R22
+R23
+R24
+R17
+R18
+Ehard_block
+R1
+R4
+R2
+R6
+R7
+R8
+R3
+R10
+R11
+R12
+l0
+L34
+ViB[@XD6>4f^a@az=ll8LZ1
+R13
+32
+R14
+R15
+R16
+R17
+R18
+!s100 RC4@N3XiSMdQMTf3Z;=id0
+!i10b 1
+Astructure
+R4
+R2
+R6
+R7
+R8
+R3
+DEx4 work 10 hard_block 0 22 iB[@XD6>4f^a@az=ll8LZ1
+l64
+L50
+VhZ4711OZWWPD=Sj=TIZU22
+!s100 ^Wl>I7QP@V:CC=<0N^P>?2
+R13
+32
+R14
+R15
+R16
+R17
+R18
+!i10b 1
