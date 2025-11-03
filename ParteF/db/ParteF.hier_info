@@ -1,21 +1,33 @@
-|CompDIR
-Fin_dir <= Contador_ModN:inst.fin
-Hab_dir => inst1.IN0
-SCL => inst1.IN1
-SOY <= Comparador:inst7.eq
+|ParteF
+Fin_Dir <= fdir.DB_MAX_OUTPUT_PORT_TYPE
+Clk => I2Control:inst.clock
+SDA => I2Control:inst.SDA
 SDA => Registro_Shift:inst2.s_in
+SDA => Registro_Shift:inst32.s_in
+Soy <= Comparador:inst13.eq
+SCL => inst16.IN0
+SCL => inst5.IN1
+SCL => inst6.IN0
+ack <= I2Control:inst.Ack_on
+hab_dato <= dato.DB_MAX_OUTPUT_PORT_TYPE
+hab_dir <= dir.DB_MAX_OUTPUT_PORT_TYPE
+Fin_Dato <= fdato.DB_MAX_OUTPUT_PORT_TYPE
+Salida[0] <= Contador_ModN:inst27.count[0]
+Salida[1] <= Contador_ModN:inst27.count[1]
+Salida[2] <= Contador_ModN:inst27.count[2]
+Salida[3] <= Contador_ModN:inst27.count[3]
 
 
-|CompDIR|Contador_ModN:inst
+|ParteF|Contador_ModN:inst27
 clk => cnt[0].CLK
 clk => cnt[1].CLK
 clk => cnt[2].CLK
-reset => cnt.OUTPUTSELECT
-reset => cnt.OUTPUTSELECT
-reset => cnt.OUTPUTSELECT
-enable => cnt.OUTPUTSELECT
-enable => cnt.OUTPUTSELECT
-enable => cnt.OUTPUTSELECT
+reset => cnt[0].ACLR
+reset => cnt[1].ACLR
+reset => cnt[2].ACLR
+enable => cnt[2].ENA
+enable => cnt[1].ENA
+enable => cnt[0].ENA
 fin <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
 count[0] <= cnt[0].DB_MAX_OUTPUT_PORT_TYPE
 count[1] <= cnt[1].DB_MAX_OUTPUT_PORT_TYPE
@@ -23,7 +35,32 @@ count[2] <= cnt[2].DB_MAX_OUTPUT_PORT_TYPE
 count[3] <= <GND>
 
 
-|CompDIR|Comparador:inst7
+|ParteF|I2Control:inst
+reset => reg_fstate.Oscioso.OUTPUTSELECT
+reset => reg_fstate.Guardar_Dir.OUTPUTSELECT
+reset => reg_fstate.R_W.OUTPUTSELECT
+reset => reg_fstate.ACK.OUTPUTSELECT
+reset => reg_fstate.Guardar_dato.OUTPUTSELECT
+reset => Hab_dir.OUTPUTSELECT
+reset => Hab_dato.OUTPUTSELECT
+reset => Ack_on.OUTPUTSELECT
+clock => fstate~1.DATAIN
+SDA => Selector0.IN4
+SDA => Selector1.IN1
+SOY => process_1.IN0
+SOY => process_1.IN0
+Fin_dato => Selector0.IN2
+Fin_dato => Selector2.IN2
+Fin_dir => process_1.IN1
+Fin_dir => process_1.IN1
+Fin_dir => reg_fstate.OUTPUTSELECT
+Fin_dir => reg_fstate.OUTPUTSELECT
+Hab_dir <= Hab_dir.DB_MAX_OUTPUT_PORT_TYPE
+Hab_dato <= Hab_dato.DB_MAX_OUTPUT_PORT_TYPE
+Ack_on <= Ack_on.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ParteF|Comparador:inst13
 A[0] => Equal0.IN6
 A[1] => Equal0.IN5
 A[2] => Equal0.IN4
@@ -38,10 +75,11 @@ B[3] => Equal0.IN10
 B[4] => Equal0.IN9
 B[5] => Equal0.IN8
 B[6] => Equal0.IN7
-eq <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+reset => eq.OUTPUTSELECT
+eq <= eq.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|CompDIR|Registro_Shift:inst2
+|ParteF|Registro_Shift:inst2
 clk => reg[0].CLK
 clk => reg[1].CLK
 clk => reg[2].CLK
@@ -73,13 +111,69 @@ q_out[5] <= reg[5].DB_MAX_OUTPUT_PORT_TYPE
 q_out[6] <= reg[6].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|CompDIR|Direccion_esclavo:inst8
+|ParteF|Direccion_esclavo:inst14
 dir_out[0] <= <VCC>
-dir_out[1] <= <GND>
+dir_out[1] <= <VCC>
 dir_out[2] <= <GND>
 dir_out[3] <= <GND>
-dir_out[4] <= <VCC>
-dir_out[5] <= <GND>
-dir_out[6] <= <VCC>
+dir_out[4] <= <GND>
+dir_out[5] <= <VCC>
+dir_out[6] <= <GND>
+
+
+|ParteF|Contador_ModN:inst3
+clk => cnt[0].CLK
+clk => cnt[1].CLK
+clk => cnt[2].CLK
+clk => cnt[3].CLK
+reset => cnt[0].ACLR
+reset => cnt[1].ACLR
+reset => cnt[2].ACLR
+reset => cnt[3].ACLR
+enable => cnt[0].ENA
+enable => cnt[3].ENA
+enable => cnt[2].ENA
+enable => cnt[1].ENA
+fin <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+count[0] <= cnt[0].DB_MAX_OUTPUT_PORT_TYPE
+count[1] <= cnt[1].DB_MAX_OUTPUT_PORT_TYPE
+count[2] <= cnt[2].DB_MAX_OUTPUT_PORT_TYPE
+count[3] <= cnt[3].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ParteF|Registro_Shift:inst32
+clk => reg[0].CLK
+clk => reg[1].CLK
+clk => reg[2].CLK
+clk => reg[3].CLK
+clk => reg[4].CLK
+clk => reg[5].CLK
+clk => reg[6].CLK
+clk => reg[7].CLK
+reset => reg.OUTPUTSELECT
+reset => reg.OUTPUTSELECT
+reset => reg.OUTPUTSELECT
+reset => reg.OUTPUTSELECT
+reset => reg.OUTPUTSELECT
+reset => reg.OUTPUTSELECT
+reset => reg.OUTPUTSELECT
+reset => reg.OUTPUTSELECT
+enable => reg.OUTPUTSELECT
+enable => reg.OUTPUTSELECT
+enable => reg.OUTPUTSELECT
+enable => reg.OUTPUTSELECT
+enable => reg.OUTPUTSELECT
+enable => reg.OUTPUTSELECT
+enable => reg.OUTPUTSELECT
+enable => reg.OUTPUTSELECT
+s_in => reg.DATAB
+q_out[0] <= reg[0].DB_MAX_OUTPUT_PORT_TYPE
+q_out[1] <= reg[1].DB_MAX_OUTPUT_PORT_TYPE
+q_out[2] <= reg[2].DB_MAX_OUTPUT_PORT_TYPE
+q_out[3] <= reg[3].DB_MAX_OUTPUT_PORT_TYPE
+q_out[4] <= reg[4].DB_MAX_OUTPUT_PORT_TYPE
+q_out[5] <= reg[5].DB_MAX_OUTPUT_PORT_TYPE
+q_out[6] <= reg[6].DB_MAX_OUTPUT_PORT_TYPE
+q_out[7] <= reg[7].DB_MAX_OUTPUT_PORT_TYPE
 
 

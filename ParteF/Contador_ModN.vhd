@@ -19,20 +19,20 @@ architecture Behavioral of Contador_ModN is
     signal cnt : integer range 0 to N := 0;
 begin
 
-    process(clk)
-    begin
-        if rising_edge(clk) then
-            if reset = '1' then
-                cnt <= 0;
-            elsif enable = '1' then
-                if cnt = N then
-                    cnt <= 0;           -- Reinicia automáticamente
-                else
-                    cnt <= cnt + 1;
-                end if;
+process(clk, reset)
+begin
+    if reset = '1' then
+        cnt <= 0;
+    elsif falling_edge(clk) then
+        if enable = '1' then
+            if cnt = N then
+                cnt <= 0;           -- Reinicia automáticamente
+            else
+                cnt <= cnt + 1;
             end if;
         end if;
-    end process;
+    end if;
+end process;
 
     fin   <= '1' when cnt = N else '0';
     count <= std_logic_vector(to_unsigned(cnt, count'length));

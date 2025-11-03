@@ -1,0 +1,8 @@
+
+State Machine - |ParteF|I2Control:inst|fstate
+Name fstate.Guardar_dato fstate.ACK fstate.R_W fstate.Guardar_Dir fstate.Oscioso 
+fstate.Oscioso 0 0 0 0 0 
+fstate.Guardar_Dir 0 0 0 1 1 
+fstate.R_W 0 0 1 0 1 
+fstate.ACK 0 1 0 0 1 
+fstate.Guardar_dato 1 0 0 0 1 

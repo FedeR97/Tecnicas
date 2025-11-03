@@ -18,9 +18,9 @@
 -- the top level entity of the current Quartus project .The user can use this   
 -- testbench to simulate his design using a third-party simulation tool .       
 -- *****************************************************************************
--- Generated on "10/31/2025 11:43:05"
+-- Generated on "11/02/2025 14:58:41"
                                                              
--- Vhdl Test Bench(with test vectors) for design  :          CompDIR
+-- Vhdl Test Bench(with test vectors) for design  :          ParteF
 -- 
 -- Simulation tool : 3rd Party
 -- 
@@ -28,46 +28,47 @@
 LIBRARY ieee;                                               
 USE ieee.std_logic_1164.all;                                
 
-ENTITY CompDIR_vhd_vec_tst IS
-END CompDIR_vhd_vec_tst;
-ARCHITECTURE CompDIR_arch OF CompDIR_vhd_vec_tst IS
+ENTITY ParteF_vhd_vec_tst IS
+END ParteF_vhd_vec_tst;
+ARCHITECTURE ParteF_arch OF ParteF_vhd_vec_tst IS
 -- constants                                                 
 -- signals                                                   
-SIGNAL Fin_dir : STD_LOGIC;
-SIGNAL Hab_dir : STD_LOGIC;
+SIGNAL ack : STD_LOGIC;
+SIGNAL Clk : STD_LOGIC;
+SIGNAL Fin_Dato : STD_LOGIC;
+SIGNAL Fin_Dir : STD_LOGIC;
+SIGNAL hab_dato : STD_LOGIC;
+SIGNAL hab_dir : STD_LOGIC;
 SIGNAL SCL : STD_LOGIC;
 SIGNAL SDA : STD_LOGIC;
-SIGNAL SOY : STD_LOGIC;
-COMPONENT CompDIR
+SIGNAL Soy : STD_LOGIC;
+COMPONENT ParteF
 	PORT (
-	Fin_dir : OUT STD_LOGIC;
-	Hab_dir : IN STD_LOGIC;
+	ack : OUT STD_LOGIC;
+	Clk : IN STD_LOGIC;
+	Fin_Dato : OUT STD_LOGIC;
+	Fin_Dir : OUT STD_LOGIC;
+	hab_dato : OUT STD_LOGIC;
+	hab_dir : OUT STD_LOGIC;
 	SCL : IN STD_LOGIC;
 	SDA : IN STD_LOGIC;
-	SOY : OUT STD_LOGIC
+	Soy : OUT STD_LOGIC
 	);
 END COMPONENT;
 BEGIN
-	i1 : CompDIR
+	i1 : ParteF
 	PORT MAP (
 -- list connections between master ports and signals
-	Fin_dir => Fin_dir,
-	Hab_dir => Hab_dir,
+	ack => ack,
+	Clk => Clk,
+	Fin_Dato => Fin_Dato,
+	Fin_Dir => Fin_Dir,
+	hab_dato => hab_dato,
+	hab_dir => hab_dir,
 	SCL => SCL,
 	SDA => SDA,
-	SOY => SOY
+	Soy => Soy
 	);
-
--- Hab_dir
-t_prcs_Hab_dir: PROCESS
-BEGIN
-	Hab_dir <= '0';
-	WAIT FOR 50000 ps;
-	Hab_dir <= '1';
-	WAIT FOR 460000 ps;
-	Hab_dir <= '0';
-WAIT;
-END PROCESS t_prcs_Hab_dir;
 
 -- SCL
 t_prcs_SCL: PROCESS
@@ -101,4 +102,4 @@ BEGIN
 	SDA <= '0';
 WAIT;
 END PROCESS t_prcs_SDA;
-END CompDIR_arch;
+END ParteF_arch;

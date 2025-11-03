@@ -13,32 +13,32 @@
 # -- Compiling architecture structure of hard_block
 # -- Loading package dffeas_pack
 # -- Loading package altera_primitives_components
-# -- Compiling entity CompDIR
-# -- Compiling architecture structure of CompDIR
+# -- Compiling entity ParteF
+# -- Compiling architecture structure of ParteF
 # Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
-# -- Compiling entity CompDIR_vhd_vec_tst
-# -- Compiling architecture CompDIR_arch of CompDIR_vhd_vec_tst
-# vsim -L cycloneive -L altera -L altera_mf -L 220model -L sgate -L altera_lnsim -c -t 1ps -novopt work.CompDIR_vhd_vec_tst 
+# -- Compiling entity ParteF_vhd_vec_tst
+# -- Compiling architecture ParteF_arch of ParteF_vhd_vec_tst
+# vsim -L cycloneive -L altera -L altera_mf -L 220model -L sgate -L altera_lnsim -c -t 1ps -novopt work.ParteF_vhd_vec_tst 
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
-# Loading work.compdir_vhd_vec_tst(compdir_arch)
+# Loading work.partef_vhd_vec_tst(partef_arch)
 # Loading ieee.vital_timing(body)
 # Loading ieee.vital_primitives(body)
 # Loading altera.dffeas_pack
 # Loading altera.altera_primitives_components
 # Loading cycloneive.cycloneive_atom_pack(body)
 # Loading cycloneive.cycloneive_components
-# Loading work.compdir(structure)
+# Loading work.partef(structure)
 # Loading work.hard_block(structure)
 # Loading ieee.std_logic_arith(body)
 # Loading cycloneive.cycloneive_io_obuf(arch)
 # Loading cycloneive.cycloneive_io_ibuf(arch)
-# Loading cycloneive.cycloneive_lcell_comb(vital_lcell_comb)
 # Loading cycloneive.cycloneive_clkctrl(vital_clkctrl)
 # Loading cycloneive.cycloneive_ena_reg(behave)
 # Loading altera.dffeas(vital_dffeas)
+# Loading cycloneive.cycloneive_lcell_comb(vital_lcell_comb)
 # after#28

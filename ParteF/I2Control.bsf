@@ -79,6 +79,13 @@ refer to the applicable agreement for further details.
 		(text "Hab_dato" (rect 117 43 155 55)(font "Arial" ))
 		(line (pt 176 48)(pt 160 48)(line_width 1))
 	)
+	(port
+		(pt 176 64)
+		(output)
+		(text "Ack_on" (rect 0 0 33 12)(font "Arial" ))
+		(text "Ack_on" (rect 122 59 155 71)(font "Arial" ))
+		(line (pt 176 64)(pt 160 64)(line_width 1))
+	)
 	(drawing
 		(rectangle (rect 16 16 160 128)(line_width 1))
 	)

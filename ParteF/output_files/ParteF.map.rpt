@@ -1,5 +1,5 @@
 Analysis & Synthesis report for ParteF
-Fri Oct 31 11:41:16 2025
+Sun Nov 02 22:46:01 2025
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -13,13 +13,16 @@ Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
   5. Analysis & Synthesis Source Files Read
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
-  8. General Register Statistics
-  9. Parameter Settings for User Entity Instance: Contador_ModN:inst
- 10. Parameter Settings for User Entity Instance: Comparador:inst7
- 11. Parameter Settings for User Entity Instance: Registro_Shift:inst2
- 12. Post-Synthesis Netlist Statistics for Top Partition
- 13. Elapsed Time Per Partition
- 14. Analysis & Synthesis Messages
+  8. State Machine - |ParteF|I2Control:inst|fstate
+  9. General Register Statistics
+ 10. Parameter Settings for User Entity Instance: Contador_ModN:inst27
+ 11. Parameter Settings for User Entity Instance: Comparador:inst13
+ 12. Parameter Settings for User Entity Instance: Registro_Shift:inst2
+ 13. Parameter Settings for User Entity Instance: Contador_ModN:inst3
+ 14. Parameter Settings for User Entity Instance: Registro_Shift:inst32
+ 15. Post-Synthesis Netlist Statistics for Top Partition
+ 16. Elapsed Time Per Partition
+ 17. Analysis & Synthesis Messages
 
 
 
@@ -45,16 +48,16 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Fri Oct 31 11:41:16 2025       ;
+; Analysis & Synthesis Status        ; Successful - Sun Nov 02 22:46:01 2025       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; ParteF                                      ;
-; Top-level Entity Name              ; CompDIR                                     ;
+; Top-level Entity Name              ; ParteF                                      ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 14                                          ;
-;     Total combinational functions  ; 7                                           ;
-;     Dedicated logic registers      ; 10                                          ;
-; Total registers                    ; 10                                          ;
-; Total pins                         ; 5                                           ;
+; Total logic elements               ; 29                                          ;
+;     Total combinational functions  ; 21                                          ;
+;     Dedicated logic registers      ; 19                                          ;
+; Total registers                    ; 19                                          ;
+; Total pins                         ; 13                                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
 ; Embedded Multiplier 9-bit elements ; 0                                           ;
@@ -68,7 +71,7 @@ refer to the applicable agreement for further details.
 ; Option                                                           ; Setting            ; Default Value      ;
 +------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                           ; EP4CE22F17C7       ;                    ;
-; Top-level entity name                                            ; CompDIR            ; ParteF             ;
+; Top-level entity name                                            ; ParteF             ; ParteF             ;
 ; Family name                                                      ; Cyclone IV E       ; Cyclone V          ;
 ; Use smart compilation                                            ; Off                ; Off                ;
 ; Enable parallel Assembler and Timing Analyzer during compilation ; On                 ; On                 ;
@@ -170,11 +173,12 @@ refer to the applicable agreement for further details.
 +----------------------------------+-----------------+------------------------------------+-----------------------------------------------------------------------------------------------+---------+
 ; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                                                  ; Library ;
 +----------------------------------+-----------------+------------------------------------+-----------------------------------------------------------------------------------------------+---------+
+; ParteF.bdf                       ; yes             ; User Block Diagram/Schematic File  ; C:/Users/fede_/OneDrive/Documentos/ProyectosQuartus/Tecnicas/V18/ParteF/ParteF.bdf            ;         ;
 ; Contador_ModN.vhd                ; yes             ; User VHDL File                     ; C:/Users/fede_/OneDrive/Documentos/ProyectosQuartus/Tecnicas/V18/ParteF/Contador_ModN.vhd     ;         ;
 ; Registro_Shift.vhd               ; yes             ; User VHDL File                     ; C:/Users/fede_/OneDrive/Documentos/ProyectosQuartus/Tecnicas/V18/ParteF/Registro_Shift.vhd    ;         ;
 ; Direccion_esclavo.vhd            ; yes             ; User VHDL File                     ; C:/Users/fede_/OneDrive/Documentos/ProyectosQuartus/Tecnicas/V18/ParteF/Direccion_esclavo.vhd ;         ;
 ; Comparador.vhd                   ; yes             ; User VHDL File                     ; C:/Users/fede_/OneDrive/Documentos/ProyectosQuartus/Tecnicas/V18/ParteF/Comparador.vhd        ;         ;
-; CompDIR.bdf                      ; yes             ; User Block Diagram/Schematic File  ; C:/Users/fede_/OneDrive/Documentos/ProyectosQuartus/Tecnicas/V18/ParteF/CompDIR.bdf           ;         ;
+; I2Control.vhd                    ; yes             ; User VHDL File                     ; C:/Users/fede_/OneDrive/Documentos/ProyectosQuartus/Tecnicas/V18/ParteF/I2Control.vhd         ;         ;
 +----------------------------------+-----------------+------------------------------------+-----------------------------------------------------------------------------------------------+---------+
 
 
@@ -183,44 +187,60 @@ refer to the applicable agreement for further details.
 +---------------------------------------------+-------+
 ; Resource                                    ; Usage ;
 +---------------------------------------------+-------+
-; Estimated Total logic elements              ; 14    ;
+; Estimated Total logic elements              ; 29    ;
 ;                                             ;       ;
-; Total combinational functions               ; 7     ;
+; Total combinational functions               ; 21    ;
 ; Logic element usage by number of LUT inputs ;       ;
-;     -- 4 input functions                    ; 2     ;
-;     -- 3 input functions                    ; 2     ;
-;     -- <=2 input functions                  ; 3     ;
+;     -- 4 input functions                    ; 8     ;
+;     -- 3 input functions                    ; 8     ;
+;     -- <=2 input functions                  ; 5     ;
 ;                                             ;       ;
 ; Logic elements by mode                      ;       ;
-;     -- normal mode                          ; 7     ;
+;     -- normal mode                          ; 21    ;
 ;     -- arithmetic mode                      ; 0     ;
 ;                                             ;       ;
-; Total registers                             ; 10    ;
-;     -- Dedicated logic registers            ; 10    ;
+; Total registers                             ; 19    ;
+;     -- Dedicated logic registers            ; 19    ;
 ;     -- I/O registers                        ; 0     ;
 ;                                             ;       ;
-; I/O pins                                    ; 5     ;
+; I/O pins                                    ; 13    ;
 ;                                             ;       ;
 ; Embedded Multiplier 9-bit elements          ; 0     ;
 ;                                             ;       ;
-; Maximum fan-out node                        ; inst1 ;
+; Maximum fan-out node                        ; inst5 ;
 ; Maximum fan-out                             ; 10    ;
-; Total fan-out                               ; 46    ;
-; Average fan-out                             ; 1.70  ;
+; Total fan-out                               ; 132   ;
+; Average fan-out                             ; 2.00  ;
 +---------------------------------------------+-------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                   ;
-+----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------+----------------+--------------+
-; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name           ; Entity Name    ; Library Name ;
-+----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------+----------------+--------------+
-; |CompDIR                   ; 7 (1)               ; 10 (0)                    ; 0           ; 0            ; 0       ; 0         ; 5    ; 0            ; |CompDIR                      ; CompDIR        ; work         ;
-;    |Comparador:inst7|      ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CompDIR|Comparador:inst7     ; Comparador     ; work         ;
-;    |Contador_ModN:inst|    ; 4 (4)               ; 3 (3)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CompDIR|Contador_ModN:inst   ; Contador_ModN  ; work         ;
-;    |Registro_Shift:inst2|  ; 0 (0)               ; 7 (7)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CompDIR|Registro_Shift:inst2 ; Registro_Shift ; work         ;
-+----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------+----------------+--------------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                  ;
++----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+------------------------------+----------------+--------------+
+; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name          ; Entity Name    ; Library Name ;
++----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+------------------------------+----------------+--------------+
+; |ParteF                    ; 21 (3)              ; 19 (0)                    ; 0           ; 0            ; 0       ; 0         ; 13   ; 0            ; |ParteF                      ; ParteF         ; work         ;
+;    |Comparador:inst13|     ; 3 (3)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ParteF|Comparador:inst13    ; Comparador     ; work         ;
+;    |Contador_ModN:inst27|  ; 4 (4)               ; 3 (3)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ParteF|Contador_ModN:inst27 ; Contador_ModN  ; work         ;
+;    |Contador_ModN:inst3|   ; 5 (5)               ; 4 (4)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ParteF|Contador_ModN:inst3  ; Contador_ModN  ; work         ;
+;    |I2Control:inst|        ; 6 (6)               ; 5 (5)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ParteF|I2Control:inst       ; I2Control      ; work         ;
+;    |Registro_Shift:inst2|  ; 0 (0)               ; 7 (7)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ParteF|Registro_Shift:inst2 ; Registro_Shift ; work         ;
++----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+------------------------------+----------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
+Encoding Type:  One-Hot
++-----------------------------------------------------------------------------------------------------------+
+; State Machine - |ParteF|I2Control:inst|fstate                                                             ;
++---------------------+---------------------+------------+------------+--------------------+----------------+
+; Name                ; fstate.Guardar_dato ; fstate.ACK ; fstate.R_W ; fstate.Guardar_Dir ; fstate.Oscioso ;
++---------------------+---------------------+------------+------------+--------------------+----------------+
+; fstate.Oscioso      ; 0                   ; 0          ; 0          ; 0                  ; 0              ;
+; fstate.Guardar_Dir  ; 0                   ; 0          ; 0          ; 1                  ; 1              ;
+; fstate.R_W          ; 0                   ; 0          ; 1          ; 0                  ; 1              ;
+; fstate.ACK          ; 0                   ; 1          ; 0          ; 0                  ; 1              ;
+; fstate.Guardar_dato ; 1                   ; 0          ; 0          ; 0                  ; 1              ;
++---------------------+---------------------+------------+------------+--------------------+----------------+
 
 
 +------------------------------------------------------+
@@ -228,33 +248,33 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 10    ;
+; Total registers                              ; 19    ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Clear ; 7     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
 ; Number of registers using Clock Enable       ; 0     ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
 
-+-----------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: Contador_ModN:inst ;
-+----------------+-------+----------------------------------------+
-; Parameter Name ; Value ; Type                                   ;
-+----------------+-------+----------------------------------------+
-; n              ; 7     ; Signed Integer                         ;
-+----------------+-------+----------------------------------------+
++-------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Contador_ModN:inst27 ;
++----------------+-------+------------------------------------------+
+; Parameter Name ; Value ; Type                                     ;
++----------------+-------+------------------------------------------+
+; n              ; 7     ; Signed Integer                           ;
++----------------+-------+------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+---------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: Comparador:inst7 ;
-+----------------+-------+--------------------------------------+
-; Parameter Name ; Value ; Type                                 ;
-+----------------+-------+--------------------------------------+
-; n              ; 7     ; Signed Integer                       ;
-+----------------+-------+--------------------------------------+
++----------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Comparador:inst13 ;
++----------------+-------+---------------------------------------+
+; Parameter Name ; Value ; Type                                  ;
++----------------+-------+---------------------------------------+
+; n              ; 7     ; Signed Integer                        ;
++----------------+-------+---------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -268,23 +288,45 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
++------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Contador_ModN:inst3 ;
++----------------+-------+-----------------------------------------+
+; Parameter Name ; Value ; Type                                    ;
++----------------+-------+-----------------------------------------+
+; n              ; 8     ; Signed Integer                          ;
++----------------+-------+-----------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Registro_Shift:inst32 ;
++----------------+-------+-------------------------------------------+
+; Parameter Name ; Value ; Type                                      ;
++----------------+-------+-------------------------------------------+
+; n              ; 8     ; Signed Integer                            ;
++----------------+-------+-------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
 +-----------------------------------------------------+
 ; Post-Synthesis Netlist Statistics for Top Partition ;
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; boundary_port         ; 5                           ;
-; cycloneiii_ff         ; 10                          ;
-;     plain             ; 10                          ;
-; cycloneiii_lcell_comb ; 7                           ;
-;     normal            ; 7                           ;
+; boundary_port         ; 13                          ;
+; cycloneiii_ff         ; 19                          ;
+;     CLR               ; 7                           ;
+;     plain             ; 12                          ;
+; cycloneiii_lcell_comb ; 22                          ;
+;     normal            ; 22                          ;
+;         0 data inputs ; 1                           ;
 ;         1 data inputs ; 1                           ;
-;         2 data inputs ; 2                           ;
-;         3 data inputs ; 2                           ;
-;         4 data inputs ; 2                           ;
+;         2 data inputs ; 4                           ;
+;         3 data inputs ; 8                           ;
+;         4 data inputs ; 8                           ;
 ;                       ;                             ;
-; Max LUT depth         ; 2.00                        ;
-; Average LUT depth     ; 1.25                        ;
+; Max LUT depth         ; 3.00                        ;
+; Average LUT depth     ; 1.91                        ;
 +-----------------------+-----------------------------+
 
 
@@ -303,7 +345,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Fri Oct 31 11:40:57 2025
+    Info: Processing started: Sun Nov 02 22:45:44 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off ParteF -c ParteF
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -319,31 +361,32 @@ Info (12021): Found 2 design units, including 1 entities, in source file direcci
     Info (12022): Found design unit 1: Direccion_esclavo-Behavioral File: C:/Users/fede_/OneDrive/Documentos/ProyectosQuartus/Tecnicas/V18/ParteF/Direccion_esclavo.vhd Line: 14
     Info (12023): Found entity 1: Direccion_esclavo File: C:/Users/fede_/OneDrive/Documentos/ProyectosQuartus/Tecnicas/V18/ParteF/Direccion_esclavo.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file comparador.vhd
-    Info (12022): Found design unit 1: Comparador-Behavioral File: C:/Users/fede_/OneDrive/Documentos/ProyectosQuartus/Tecnicas/V18/ParteF/Comparador.vhd Line: 15
+    Info (12022): Found design unit 1: Comparador-Behavioral File: C:/Users/fede_/OneDrive/Documentos/ProyectosQuartus/Tecnicas/V18/ParteF/Comparador.vhd Line: 16
     Info (12023): Found entity 1: Comparador File: C:/Users/fede_/OneDrive/Documentos/ProyectosQuartus/Tecnicas/V18/ParteF/Comparador.vhd Line: 4
-Info (12021): Found 1 design units, including 1 entities, in source file compdir.bdf
-    Info (12023): Found entity 1: CompDIR
-Info (12021): Found 1 design units, including 1 entities, in source file guardadato.bdf
-    Info (12023): Found entity 1: GuardaDato
 Info (12021): Found 2 design units, including 1 entities, in source file i2control.vhd
-    Info (12022): Found design unit 1: I2Control-BEHAVIOR File: C:/Users/fede_/OneDrive/Documentos/ProyectosQuartus/Tecnicas/V18/ParteF/I2Control.vhd Line: 34
+    Info (12022): Found design unit 1: I2Control-BEHAVIOR File: C:/Users/fede_/OneDrive/Documentos/ProyectosQuartus/Tecnicas/V18/ParteF/I2Control.vhd Line: 35
     Info (12023): Found entity 1: I2Control File: C:/Users/fede_/OneDrive/Documentos/ProyectosQuartus/Tecnicas/V18/ParteF/I2Control.vhd Line: 21
-Info (12127): Elaborating entity "CompDIR" for the top level hierarchy
-Info (12128): Elaborating entity "Contador_ModN" for hierarchy "Contador_ModN:inst"
-Info (12128): Elaborating entity "Comparador" for hierarchy "Comparador:inst7"
+Info (12127): Elaborating entity "ParteF" for the top level hierarchy
+Info (12128): Elaborating entity "Contador_ModN" for hierarchy "Contador_ModN:inst27"
+Info (12128): Elaborating entity "I2Control" for hierarchy "I2Control:inst"
+Info (12128): Elaborating entity "Comparador" for hierarchy "Comparador:inst13"
 Info (12128): Elaborating entity "Registro_Shift" for hierarchy "Registro_Shift:inst2"
-Info (12128): Elaborating entity "Direccion_esclavo" for hierarchy "Direccion_esclavo:inst8"
+Info (12128): Elaborating entity "Direccion_esclavo" for hierarchy "Direccion_esclavo:inst14"
+Info (12128): Elaborating entity "Contador_ModN" for hierarchy "Contador_ModN:inst3"
+Info (12128): Elaborating entity "Registro_Shift" for hierarchy "Registro_Shift:inst32"
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "Salida[3]" is stuck at GND
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 19 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 42 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 3 input pins
-    Info (21059): Implemented 2 output pins
-    Info (21061): Implemented 14 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4804 megabytes
-    Info: Processing ended: Fri Oct 31 11:41:16 2025
-    Info: Elapsed time: 00:00:19
-    Info: Total CPU time (on all processors): 00:00:43
+    Info (21059): Implemented 10 output pins
+    Info (21061): Implemented 29 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 3 warnings
+    Info: Peak virtual memory: 4797 megabytes
+    Info: Processing ended: Sun Nov 02 22:46:01 2025
+    Info: Elapsed time: 00:00:17
+    Info: Total CPU time (on all processors): 00:00:40
 
 

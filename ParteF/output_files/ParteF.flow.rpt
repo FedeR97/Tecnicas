@@ -1,5 +1,5 @@
 Flow report for ParteF
-Fri Oct 31 11:43:06 2025
+Sun Nov 02 22:46:18 2025
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -40,18 +40,18 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Fri Oct 31 11:43:06 2025       ;
+; Flow Status                        ; Successful - Sun Nov 02 22:46:18 2025       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; ParteF                                      ;
-; Top-level Entity Name              ; CompDIR                                     ;
+; Top-level Entity Name              ; ParteF                                      ;
 ; Family                             ; Cyclone IV E                                ;
 ; Device                             ; EP4CE22F17C7                                ;
 ; Timing Models                      ; Final                                       ;
-; Total logic elements               ; 12 / 22,320 ( < 1 % )                       ;
-;     Total combinational functions  ; 7 / 22,320 ( < 1 % )                        ;
-;     Dedicated logic registers      ; 10 / 22,320 ( < 1 % )                       ;
-; Total registers                    ; 10                                          ;
-; Total pins                         ; 5 / 154 ( 3 % )                             ;
+; Total logic elements               ; 28 / 22,320 ( < 1 % )                       ;
+;     Total combinational functions  ; 21 / 22,320 ( < 1 % )                       ;
+;     Dedicated logic registers      ; 19 / 22,320 ( < 1 % )                       ;
+; Total registers                    ; 19                                          ;
+; Total pins                         ; 13 / 154 ( 8 % )                            ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0 / 608,256 ( 0 % )                         ;
 ; Embedded Multiplier 9-bit elements ; 0 / 132 ( 0 % )                             ;
@@ -64,7 +64,7 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 10/31/2025 11:40:57 ;
+; Start date & time ; 11/02/2025 22:45:44 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; ParteF              ;
 +-------------------+---------------------+
@@ -75,18 +75,19 @@ refer to the applicable agreement for further details.
 +-------------------------------------+----------------------------------------+---------------+-------------+----------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id     ;
 +-------------------------------------+----------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 256134807449955.176192165716264        ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID               ; 256134807449955.176213434414156        ; --            ; --          ; --             ;
 ; EDA_OUTPUT_DATA_FORMAT              ; Vhdl                                   ; --            ; --          ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (VHDL)                 ; <None>        ; --          ; --             ;
 ; EDA_TIME_SCALE                      ; 1 ps                                   ; --            ; --          ; eda_simulation ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                                     ; --            ; --          ; --             ;
 ; MIN_CORE_JUNCTION_TEMP              ; 0                                      ; --            ; --          ; --             ;
 ; NOMINAL_CORE_SUPPLY_VOLTAGE         ; 1.2V                                   ; --            ; --          ; --             ;
-; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --            ; CompDIR     ; Top            ;
-; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family) ; --            ; CompDIR     ; Top            ;
-; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family) ; --            ; CompDIR     ; Top            ;
+; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --            ; --          ; Top            ;
+; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family) ; --            ; --          ; Top            ;
+; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family) ; --            ; --          ; Top            ;
+; POWER_BOARD_THERMAL_MODEL           ; None (CONSERVATIVE)                    ; --            ; --          ; --             ;
+; POWER_PRESET_COOLING_SOLUTION       ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW  ; --            ; --          ; --             ;
 ; PROJECT_OUTPUT_DIRECTORY            ; output_files                           ; --            ; --          ; --             ;
-; TOP_LEVEL_ENTITY                    ; CompDIR                                ; ParteF        ; --          ; --             ;
 +-------------------------------------+----------------------------------------+---------------+-------------+----------------+
 
 
@@ -95,14 +96,12 @@ refer to the applicable agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:19     ; 1.0                     ; 4804 MB             ; 00:00:42                           ;
-; Fitter               ; 00:00:06     ; 1.0                     ; 5509 MB             ; 00:00:08                           ;
-; Assembler            ; 00:00:01     ; 1.0                     ; 4673 MB             ; 00:00:01                           ;
-; Timing Analyzer      ; 00:00:02     ; 1.0                     ; 4764 MB             ; 00:00:02                           ;
-; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4640 MB             ; 00:00:01                           ;
-; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4626 MB             ; 00:00:01                           ;
-; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4635 MB             ; 00:00:01                           ;
-; Total                ; 00:00:31     ; --                      ; --                  ; 00:00:56                           ;
+; Analysis & Synthesis ; 00:00:16     ; 1.0                     ; 4797 MB             ; 00:00:40                           ;
+; Fitter               ; 00:00:07     ; 1.0                     ; 5508 MB             ; 00:00:10                           ;
+; Assembler            ; 00:00:01     ; 1.0                     ; 4675 MB             ; 00:00:01                           ;
+; Timing Analyzer      ; 00:00:03     ; 1.0                     ; 4763 MB             ; 00:00:03                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4639 MB             ; 00:00:01                           ;
+; Total                ; 00:00:28     ; --                      ; --                  ; 00:00:55                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -116,8 +115,6 @@ refer to the applicable agreement for further details.
 ; Assembler            ; Fede-PCBOX       ; Windows 10 ; 10.0       ; x86_64         ;
 ; Timing Analyzer      ; Fede-PCBOX       ; Windows 10 ; 10.0       ; x86_64         ;
 ; EDA Netlist Writer   ; Fede-PCBOX       ; Windows 10 ; 10.0       ; x86_64         ;
-; EDA Netlist Writer   ; Fede-PCBOX       ; Windows 10 ; 10.0       ; x86_64         ;
-; EDA Netlist Writer   ; Fede-PCBOX       ; Windows 10 ; 10.0       ; x86_64         ;
 +----------------------+------------------+------------+------------+----------------+
 
 
@@ -129,8 +126,6 @@ quartus_fit --read_settings_files=off --write_settings_files=off ParteF -c Parte
 quartus_asm --read_settings_files=off --write_settings_files=off ParteF -c ParteF
 quartus_sta ParteF -c ParteF
 quartus_eda --read_settings_files=off --write_settings_files=off ParteF -c ParteF
-quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off ParteF -c ParteF --vector_source=C:/Users/fede_/OneDrive/Documentos/ProyectosQuartus/Tecnicas/V18/ParteF/Waveform.vwf --testbench_file=C:/Users/fede_/OneDrive/Documentos/ProyectosQuartus/Tecnicas/V18/ParteF/simulation/qsim/Waveform.vwf.vht
-quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory=C:/Users/fede_/OneDrive/Documentos/ProyectosQuartus/Tecnicas/V18/ParteF/simulation/qsim/ ParteF -c ParteF
 
 
 

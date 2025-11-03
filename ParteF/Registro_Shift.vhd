@@ -20,7 +20,7 @@ architecture Behavioral of Registro_Shift is
 begin
     process(clk)
     begin
-        if rising_edge(clk) then
+        if falling_edge(clk) then
             if reset = '1' then
                 reg <= (others => '0');
             elsif enable = '1' then

@@ -1,13 +1,13 @@
-Analysis & Synthesis Status : Successful - Fri Oct 31 11:41:16 2025
+Analysis & Synthesis Status : Successful - Sun Nov 02 22:46:01 2025
 Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 Revision Name : ParteF
-Top-level Entity Name : CompDIR
+Top-level Entity Name : ParteF
 Family : Cyclone IV E
-Total logic elements : 14
-    Total combinational functions : 7
-    Dedicated logic registers : 10
-Total registers : 10
-Total pins : 5
+Total logic elements : 29
+    Total combinational functions : 21
+    Dedicated logic registers : 19
+Total registers : 19
+Total pins : 13
 Total virtual pins : 0
 Total memory bits : 0
 Embedded Multiplier 9-bit elements : 0

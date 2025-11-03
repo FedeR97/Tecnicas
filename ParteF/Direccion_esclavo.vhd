@@ -14,5 +14,5 @@ end Direccion_esclavo;
 architecture Behavioral of Direccion_esclavo is
 begin
 --    dir_out <= dir_in;
-		dir_out <= "1010001";
+		dir_out <= "0100011";
 end Behavioral;
