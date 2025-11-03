@@ -25,7 +25,7 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: the sole purpose of programming logic devices manufactured by
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details.
-    Info: Processing started: Sun Nov 02 22:18:22 2025
+    Info: Processing started: Mon Nov 03 00:07:40 2025
 Info: Command: quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off ParteF -c ParteF --vector_source=C:/Users/fede_/OneDrive/Documentos/ProyectosQuartus/Tecnicas/V18/ParteF/Waveform2.vwf --testbench_file=C:/Users/fede_/OneDrive/Documentos/ProyectosQuartus/Tecnicas/V18/ParteF/simulation/qsim/Waveform2.vwf.vht
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 
@@ -51,14 +51,14 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: the sole purpose of programming logic devices manufactured by
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details.
-    Info: Processing started: Sun Nov 02 22:18:23 2025
+    Info: Processing started: Mon Nov 03 00:07:42 2025
 Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory=C:/Users/fede_/OneDrive/Documentos/ProyectosQuartus/Tecnicas/V18/ParteF/simulation/qsim/ ParteF -c ParteF
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (204019): Generated file ParteF.vho in folder "C:/Users/fede_/OneDrive/Documentos/ProyectosQuartus/Tecnicas/V18/ParteF/simulation/qsim//" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
     Info: Peak virtual memory: 4635 megabytes
-    Info: Processing ended: Sun Nov 02 22:18:24 2025
-    Info: Elapsed time: 00:00:01
+    Info: Processing ended: Mon Nov 03 00:07:42 2025
+    Info: Elapsed time: 00:00:00
     Info: Total CPU time (on all processors): 00:00:01
 
 Completed successfully. 
@@ -91,17 +91,17 @@ Reading C:/altera/13.0sp1/modelsim_ase/tcl/vsim/pref.tcl
 # -- Loading package cycloneive_components
 # -- Compiling entity hard_block
 # -- Compiling architecture structure of hard_block
+
 # -- Loading package dffeas_pack
 # -- Loading package altera_primitives_components
 # -- Compiling entity ParteF
-
 # -- Compiling architecture structure of ParteF
 # Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
-
 # -- Compiling entity ParteF_vhd_vec_tst
+
 # -- Compiling architecture ParteF_arch of ParteF_vhd_vec_tst
 
 # vsim -L cycloneive -L altera -L altera_mf -L 220model -L sgate -L altera_lnsim -c -t 1ps -novopt work.ParteF_vhd_vec_tst 
@@ -123,8 +123,8 @@ Reading C:/altera/13.0sp1/modelsim_ase/tcl/vsim/pref.tcl
 # Loading cycloneive.cycloneive_io_ibuf(arch)
 # Loading cycloneive.cycloneive_clkctrl(vital_clkctrl)
 # Loading cycloneive.cycloneive_ena_reg(behave)
-# Loading altera.dffeas(vital_dffeas)
 # Loading cycloneive.cycloneive_lcell_comb(vital_lcell_comb)
+# Loading altera.dffeas(vital_dffeas)
 # after#28
 
 Completed successfully. 
@@ -137,7 +137,7 @@ Reading C:/Users/fede_/OneDrive/Documentos/ProyectosQuartus/Tecnicas/V18/ParteF/
 
 Processing channel transitions... 
 
-Writing the resulting VWF to C:/Users/fede_/OneDrive/Documentos/ProyectosQuartus/Tecnicas/V18/ParteF/simulation/qsim/ParteF_20251102221825.sim.vwf
+Writing the resulting VWF to C:/Users/fede_/OneDrive/Documentos/ProyectosQuartus/Tecnicas/V18/ParteF/simulation/qsim/ParteF_20251103000744.sim.vwf
 
 Finished VCD to VWF conversion.
 

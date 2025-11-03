@@ -1,5 +1,5 @@
 Flow report for ParteF
-Sun Nov 02 22:46:18 2025
+Mon Nov 03 00:07:42 2025
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -40,15 +40,15 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Sun Nov 02 22:46:18 2025       ;
+; Flow Status                        ; Successful - Mon Nov 03 00:07:42 2025       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; ParteF                                      ;
 ; Top-level Entity Name              ; ParteF                                      ;
 ; Family                             ; Cyclone IV E                                ;
 ; Device                             ; EP4CE22F17C7                                ;
 ; Timing Models                      ; Final                                       ;
-; Total logic elements               ; 28 / 22,320 ( < 1 % )                       ;
-;     Total combinational functions  ; 21 / 22,320 ( < 1 % )                       ;
+; Total logic elements               ; 32 / 22,320 ( < 1 % )                       ;
+;     Total combinational functions  ; 28 / 22,320 ( < 1 % )                       ;
 ;     Dedicated logic registers      ; 19 / 22,320 ( < 1 % )                       ;
 ; Total registers                    ; 19                                          ;
 ; Total pins                         ; 13 / 154 ( 8 % )                            ;
@@ -64,7 +64,7 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 11/02/2025 22:45:44 ;
+; Start date & time ; 11/02/2025 23:59:25 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; ParteF              ;
 +-------------------+---------------------+
@@ -75,7 +75,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------+----------------------------------------+---------------+-------------+----------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id     ;
 +-------------------------------------+----------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 256134807449955.176213434414156        ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID               ; 152491900560.176213876407488           ; --            ; --          ; --             ;
 ; EDA_OUTPUT_DATA_FORMAT              ; Vhdl                                   ; --            ; --          ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (VHDL)                 ; <None>        ; --          ; --             ;
 ; EDA_TIME_SCALE                      ; 1 ps                                   ; --            ; --          ; eda_simulation ;
@@ -96,12 +96,14 @@ refer to the applicable agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:16     ; 1.0                     ; 4797 MB             ; 00:00:40                           ;
-; Fitter               ; 00:00:07     ; 1.0                     ; 5508 MB             ; 00:00:10                           ;
-; Assembler            ; 00:00:01     ; 1.0                     ; 4675 MB             ; 00:00:01                           ;
-; Timing Analyzer      ; 00:00:03     ; 1.0                     ; 4763 MB             ; 00:00:03                           ;
-; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4639 MB             ; 00:00:01                           ;
-; Total                ; 00:00:28     ; --                      ; --                  ; 00:00:55                           ;
+; Analysis & Synthesis ; 00:00:15     ; 1.0                     ; 4796 MB             ; 00:00:34                           ;
+; Fitter               ; 00:00:10     ; 1.0                     ; 5525 MB             ; 00:00:12                           ;
+; Assembler            ; 00:00:03     ; 1.0                     ; 4678 MB             ; 00:00:02                           ;
+; Timing Analyzer      ; 00:00:02     ; 1.0                     ; 4775 MB             ; 00:00:03                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4643 MB             ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4626 MB             ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:00     ; 1.0                     ; 4635 MB             ; 00:00:01                           ;
+; Total                ; 00:00:32     ; --                      ; --                  ; 00:00:54                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -115,6 +117,8 @@ refer to the applicable agreement for further details.
 ; Assembler            ; Fede-PCBOX       ; Windows 10 ; 10.0       ; x86_64         ;
 ; Timing Analyzer      ; Fede-PCBOX       ; Windows 10 ; 10.0       ; x86_64         ;
 ; EDA Netlist Writer   ; Fede-PCBOX       ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; Fede-PCBOX       ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; Fede-PCBOX       ; Windows 10 ; 10.0       ; x86_64         ;
 +----------------------+------------------+------------+------------+----------------+
 
 
@@ -126,6 +130,8 @@ quartus_fit --read_settings_files=off --write_settings_files=off ParteF -c Parte
 quartus_asm --read_settings_files=off --write_settings_files=off ParteF -c ParteF
 quartus_sta ParteF -c ParteF
 quartus_eda --read_settings_files=off --write_settings_files=off ParteF -c ParteF
+quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off ParteF -c ParteF --vector_source=C:/Users/fede_/OneDrive/Documentos/ProyectosQuartus/Tecnicas/V18/ParteF/Waveform2.vwf --testbench_file=C:/Users/fede_/OneDrive/Documentos/ProyectosQuartus/Tecnicas/V18/ParteF/simulation/qsim/Waveform2.vwf.vht
+quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory=C:/Users/fede_/OneDrive/Documentos/ProyectosQuartus/Tecnicas/V18/ParteF/simulation/qsim/ ParteF -c ParteF
 
 
 
